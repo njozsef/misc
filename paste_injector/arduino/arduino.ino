@@ -138,6 +138,9 @@ inline bool isBackwardButtonPressed() {
 // Arduino initialization function.
 void setup() {
   Serial.begin(115200);
+  Serial.println("Paste injector v0.0.1");
+  Serial.println("Original code by Zapta.");
+  
   
   pinMode(kLedPin, OUTPUT);
 
