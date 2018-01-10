@@ -1,4 +1,5 @@
 Arduino Motorized SMT Solder Paste Dispenser
 
+Original design and code by Zapta
+https://github.com/zapta/misc
 
-3D model and general instructions are available on Thingiverse http://www.thingiverse.com/thing:1119914
