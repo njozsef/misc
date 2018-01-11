@@ -1,0 +1,25 @@
+Partlist
+
+Exported from paste_injector.sch at 2018.01.11. 14:08
+
+EAGLE Version 8.5.0 Copyright (c) 1988-2017 Autodesk, Inc.
+
+Assembly variant: 
+
+Part     Value               Device              Package                 Library        Sheet
+
+C1       10uF                CPOL-USA/3216-18R   A/3216-18R              paste_injector 1
+C4       0.1uF               CAP-C0603           C0603                   paste_injector 1
+D1                           LED                 LED0603                 paste_injector 1
+ISP      PINHD-2X3           PINHD-2X3           2X03                    paste_injector 1
+J1       USB                 USB                 USB-MICRO-ZX62RD-AB-5P8 paste_injector 1
+J3                           PINHD-1X5           1X05                    paste_injector 1
+Q1       16Mhz               CERMOSCILL-CSTCRG   CSTCR-G                 adafruit       1
+R2       3K3                 RES-R0603           R0603                   paste_injector 1
+R3       10K                 RES-R0603           R0603                   paste_injector 1
+S1       PUSH_BUTTON         PUSH_BUTTON         PUSH_BUTTON             paste_injector 1
+S2       PUSH_BUTTON         PUSH_BUTTON         PUSH_BUTTON             paste_injector 1
+SW1      MCPL3-AV-V          MCPL3-AV-V          MCPL3-AC-V              lbrzak         1
+U$16     DISPLAY-OLED-128X32 DISPLAY-OLED-128X32 DISPLAY-OLED-128X32     diy-modules    1
+U1       ATMEGA328TQFP32     ATMEGA328TQFP32     TQFP32-08               paste_injector 1
+U2       ULN2003AD           ULN2003AD           SO16                    paste_injector 1

@@ -1,51 +1,149 @@
 #include "motor.h"
+#include "settings.h"
+
+
+#ifdef OLED_128x32_ADAFRUIT_SCREENS
+    #include <Adafruit_SSD1306.h>
+     #include <Adafruit_GFX.h>
+    #include <Wire.h>
+    #include <SPI.h>
+#endif
 
 // Controller the solder paste injector.
 
 // For motor pin connection see motor_io.cpp.
+// Arduino initialization function.
+void setup() {
+  Serial.begin(115200);
+  Serial.println("Paste injector v0.0.1");
+  Serial.println("Original code by Zapta.");
+ 
+  pinMode(kLedPin, OUTPUT);
 
-// Finite state machine states. Using 8bit enums.
-namespace states {
-  // Not moving, motor is on.
-  static const uint8_t IDLE = 0;
-  // Moving forward as long as the forward button is pressed.
-  // Speed is controlled by the potentiometer.
-  static const uint8_t FORWARD = 1;
-  // Moving backward at a fast speed as long as the Backward button
-  // is pressed.
-  static const uint8_t BACKWARD = 3;
-  // Same as IDLE but motor coils are not energized.
-  static const uint8_t SLEEP = 4;
-};
+  //PUSHBUTTONS
+  pinMode(kForwardButtonPin, INPUT_PULLUP);
+  pinMode(kBackwardButtonPin, INPUT_PULLUP);
 
-static uint8_t state = states::IDLE;
+  // Tactile control
+  pinMode(buttonUp, INPUT);
+  digitalWrite(buttonUp, INPUT_PULLUP);
+  pinMode(buttonMode, INPUT);
+  digitalWrite(buttonMode, INPUT_PULLUP);
+  pinMode(buttonDown, INPUT);
+  digitalWrite(buttonDown, INPUT_PULLUP);
+  pinMode(buttonSave, INPUT);
+  digitalWrite(buttonSave, INPUT_PULLUP);
 
-// Arduino pin for nnboard LED. For debugging. Active high.
-const int kLedPin = 13;
 
-// Arduino potentiometer analog input pin.
-static const int kPotPin = A0;
 
-// Arduino input pin for the forward (push) button. Active low.
-static const int kForwardButtonPin = 7;
+  
+  motor.begin();
+  motor.setSpeed(0, true);
+}
 
-// Arduino input pin for the backward (pull) button. Active low.
-static const int kBackwardButtonPin = 6;
 
-// After this idle time, the power to the motor is
-// disconnected. 
-static const uint32_t kSleepTimeMillis =20*1000;
 
-// Speeds in steps/sec.
-static const int kBackwardSpeed = 700;
 
-// Time in millis since entering the current state.
-static uint32_t current_state_start_time_millis = 0;
 
-Motor motor = Motor();
 
-// TODO: why do we need this to compile. The function is just below.
-//static void setState(uint8_t newState);
+// Arduino main loop function.
+void loop() {  
+  // Update the motor outputs as needed.
+  motor.loop();
+
+  // TODO: have a more interesting LED pattern. Currently it's on iff
+  // in a state that turns the motor.
+  digitalWrite(kLedPin, motor.isNonZeroSpeed());
+
+
+
+
+
+
+  // Here when last motion operation is completed.
+  switch (state) {
+    case STATE_IDLE:
+      if (millisInCurrentState() >= kSleepTimeMillis) {
+        motor.sleep();
+        setState(STATE_SLEEP);
+        return;
+      }
+      
+      // Handle buttons unly after minimal debouncing delay.
+      if (!debouncingDelay()) {
+        return;
+      }
+
+      
+      // Handle Forward button press.
+      if (isForwardButtonPressed()) {
+        motor.setSpeed(readPotAsSpeed(), true);
+        setState(STATE_FORWARD);
+        return;
+      }
+      // Handle Backward button press.
+      if (isBackwardButtonPressed()) {
+        motor.setSpeed(kBackwardSpeed, false);
+        setState(STATE_BACKWARD);
+        return;
+      }
+      break;
+
+    case STATE_FORWARD:
+      // Handle Forward button release.
+      if (!isForwardButtonPressed() && debouncingDelay()) {
+        motor.setSpeed(0, true);
+        setState(STATE_IDLE);
+        return;
+      }
+      // Handle pot changes.
+      if (millisSinceLastPotRead() >= 250) {
+        motor.setSpeed(readPotAsSpeed(), true);
+      }
+      break;
+
+    case STATE_BACKWARD:
+      // Handle Backward button release.
+      if (!isBackwardButtonPressed() && debouncingDelay()) {
+        motor.setSpeed(0, true);
+        setState(STATE_IDLE);
+        return;
+      }
+      break;
+
+    case STATE_SLEEP:
+      if (isForwardButtonPressed() || isBackwardButtonPressed()) {
+        motor.setSpeed(0, false);
+        setState(STATE_IDLE);
+        return;  
+      }
+      break;
+
+    default:
+      // Should never happend.
+      Serial.println("Unknown state");
+      // This also prints the unknown state.
+      setState(STATE_IDLE);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // A common function to change state.
 static void setState(uint8_t newState) {
@@ -67,26 +165,6 @@ static inline uint32_t millisInCurrentState() {
 static inline boolean debouncingDelay() {
    return millisInCurrentState() >= 25;
 }
-
-// Consts of a single segment of the pot value mapping function.
-struct MapSegment {
-  const int inMin;
-  const int inMax;
-  const int outMin;
-  const int outMax;
-};
-
-// Consts for all the segments of the pot value mapping function.
-static const MapSegment kMapSegments[] = {
-  {  0,   128,  1,    2},
-  {128,   256,  2,    4},
-  {256,   384,  4,   10},
-  {384,   512, 10,   22},
-  {512,  640,  22,   48},
-  {640,  768,  48,  105},
-  {768,  896, 105,  229},
-  {896, 1023, 229,  500},
-};
 
 // NUmber of segments in kMapSegments.
 const int kNumMapSegments = sizeof(kMapSegments) / sizeof(kMapSegments[0]);
@@ -137,91 +215,3 @@ inline bool isBackwardButtonPressed() {
   return !digitalRead(kBackwardButtonPin);
 }
 
-// Arduino initialization function.
-void setup() {
-  Serial.begin(115200);
-  Serial.println("Paste injector v0.0.1");
-  Serial.println("Original code by Zapta.");
-
-  
-  pinMode(kLedPin, OUTPUT);
-
-  pinMode(kForwardButtonPin, INPUT_PULLUP);
-  pinMode(kBackwardButtonPin, INPUT_PULLUP);
-  motor.begin();
-  motor.setSpeed(0, true);
-}
-
-// Arduino main loop function.
-void loop() {  
-  // Update the motor outputs as needed.
-  motor.loop();
-
-  // TODO: have a more interesting LED pattern. Currently it's on iff
-  // in a state that turns the motor.
-  digitalWrite(kLedPin, motor.isNonZeroSpeed());
-
-  // Here when last motion operation is completed.
-  switch (state) {
-    case states::IDLE:
-      if (millisInCurrentState() >= kSleepTimeMillis) {
-        motor.sleep();
-        setState(states::SLEEP);
-        return;
-      }
-      // Handle buttons unly after minimal debouncing delay.
-      if (!debouncingDelay()) {
-        return;
-      }
-      //
-      // Handle Forward button press.
-      if (isForwardButtonPressed()) {
-        motor.setSpeed(readPotAsSpeed(), true);
-        setState(states::FORWARD);
-        return;
-      }
-      // Handle Backward button press.
-      if (isBackwardButtonPressed()) {
-        motor.setSpeed(kBackwardSpeed, false);
-        setState(states::BACKWARD);
-        return;
-      }
-      break;
-
-    case states::FORWARD:
-      // Handle Forward button release.
-      if (!isForwardButtonPressed() && debouncingDelay()) {
-        motor.setSpeed(0, true);
-        setState(states::IDLE);
-        return;
-      }
-      // Handle pot changes.
-      if (millisSinceLastPotRead() >= 250) {
-        motor.setSpeed(readPotAsSpeed(), true);
-      }
-      break;
-
-    case states::BACKWARD:
-      // Handle Backward button release.
-      if (!isBackwardButtonPressed() && debouncingDelay()) {
-        motor.setSpeed(0, true);
-        setState(states::IDLE);
-        return;
-      }
-      break;
-
-    case states::SLEEP:
-      if (isForwardButtonPressed() || isBackwardButtonPressed()) {
-        motor.setSpeed(0, false);
-        setState(states::IDLE);
-        return;  
-      }
-      break;
-
-    default:
-      // Should never happend.
-      Serial.println("Unknown state");
-      // This also prints the unknown state.
-      setState(states::IDLE);
-  }
-}

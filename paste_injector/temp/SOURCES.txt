@@ -1,3 +1,0 @@
-Sources for Arduino Motorized SMT Solder Paste Dispenser
-
-Arduino Motorized SMT Solder Paste Dispenser (http://www.thingiverse.com/thing:1119914)
