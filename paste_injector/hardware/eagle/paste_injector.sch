@@ -9,24 +9,24 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -35,8 +35,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -44,19 +44,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -354,30 +354,6 @@ by exp-lbrs-filter.ulp</description>
 <text x="-3.81" y="3.175" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-3.81" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="PUSH_BUTTON">
-<description>&lt;b&gt;TACT SWITCH&lt;/b&gt; (EARTH TERMINAL)&lt;p&gt;
-Source: http://dkc3.digikey.com/Media/PDF/Data%20Sheets/E-Switch%20PDFs/TL1105%20Series.pdf</description>
-<circle x="0" y="0" radius="1.65" width="0.2032" layer="21"/>
-<wire x1="-2.9" y1="2.9" x2="-2.9" y2="-2.9" width="0.2032" layer="51"/>
-<wire x1="2.9" y1="2.9" x2="2.9" y2="-2.9" width="0.2032" layer="51"/>
-<wire x1="-2.9" y1="2.9" x2="2.9" y2="2.9" width="0.2032" layer="51"/>
-<wire x1="2.9" y1="-2.9" x2="-2.9" y2="-2.9" width="0.2032" layer="51"/>
-<wire x1="-0.995" y1="2.9" x2="0.995" y2="2.9" width="0.2032" layer="21"/>
-<wire x1="-2.9" y1="2.265" x2="-2.9" y2="-2.265" width="0.2032" layer="21"/>
-<wire x1="0.995" y1="-2.9" x2="-0.995" y2="-2.9" width="0.2032" layer="21"/>
-<wire x1="2.9" y1="2.265" x2="2.9" y2="-2.265" width="0.2032" layer="21"/>
-<rectangle x1="-2.55" y1="2.925" x2="-1.95" y2="3.85" layer="51"/>
-<rectangle x1="1.95" y1="2.925" x2="2.55" y2="3.85" layer="51"/>
-<rectangle x1="1.95" y1="-3.85" x2="2.55" y2="-2.925" layer="51" rot="R180"/>
-<rectangle x1="-2.55" y1="-3.85" x2="-1.95" y2="-2.925" layer="51" rot="R180"/>
-<pad name="A1" x="-2.25" y="3.25" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="A2" x="-2.25" y="-3.25" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="B1" x="2.25" y="3.25" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="B2" x="2.25" y="-3.25" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="GND" x="4.1" y="0" drill="1" diameter="1.6764" rot="R90"/>
-<text x="-5.08" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="5.08" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
 <package name="R0603">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
 chip</description>
@@ -628,22 +604,6 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
 <text x="-6.35" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="PUSH_BUTTON">
-<description>EVQ-PBC05R  DIGIKEY P8014S-ND</description>
-<circle x="0" y="-1.524" radius="0.915809375" width="0.254" layer="94"/>
-<circle x="0" y="1.524" radius="0.915809375" width="0.254" layer="94"/>
-<wire x1="-2.032" y1="2.54" x2="-2.032" y2="1.524" width="0.254" layer="94"/>
-<wire x1="-2.032" y1="1.524" x2="-2.032" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-2.032" y1="-1.27" x2="-2.032" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="-2.032" y1="1.524" x2="-3.048" y2="1.524" width="0.254" layer="94"/>
-<wire x1="-3.048" y1="1.524" x2="-3.048" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-3.048" y1="-1.27" x2="-2.032" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.127" layer="94"/>
-<pin name="1" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="2" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="GND" x="2.54" y="-5.08" visible="off" length="short" direction="pwr" rot="R90"/>
-<text x="-10.16" y="3.81" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
 <symbol name="R-US">
 <wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
 <wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
@@ -891,23 +851,6 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PUSH_BUTTON">
-<gates>
-<gate name="G$1" symbol="PUSH_BUTTON" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PUSH_BUTTON">
-<connects>
-<connect gate="G$1" pin="1" pad="A1"/>
-<connect gate="G$1" pin="2" pad="B1"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="RES-" prefix="R" uservalue="yes">
 <description>&lt;B&gt;RESISTOR&lt;/B&gt;, American symbol</description>
 <gates>
@@ -984,108 +927,6 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="diy-modules">
-<description>&lt;b&gt;DIY Modules for Arduino, Raspberry Pi, CubieBoard etc.&lt;/b&gt;
-&lt;br&gt;&lt;br&gt;
-The library contains a list of symbols and footprints for popular, cheap and easy-to-use electronic modules.&lt;br&gt;
-The modules are intend to work with microprocessor-based platforms such as &lt;a href="http://arduino.cc"&gt;Arduino&lt;/a&gt;, &lt;a href="http://raspberrypi.org/"&gt;Raspberry Pi&lt;/a&gt;, &lt;a href="http://cubieboard.org/"&gt;CubieBoard&lt;/a&gt;, &lt;a href="http://beagleboard.org/"&gt;BeagleBone&lt;/a&gt; and many others. There are many manufacturers of the modules in the world. Almost all of them can be bought on &lt;a href="ebay.com"&gt;ebay.com&lt;/a&gt;.&lt;br&gt;
-&lt;br&gt;
-By using this library, you can design a PCB for devices created with usage of modules. Even if you do not need to create PCB design, you can also use the library to quickly document your work by drawing schematics of devices built by you.&lt;br&gt;
-&lt;br&gt;
-The latest version, examples, photos and much more can be found at: &lt;b&gt;&lt;a href="http://diymodules.org/eagle"&gt;diymodules.org/eagle&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;
-Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailto:eagle@diymodules.org"&gt;eagle@diymodules.org&lt;/b&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;
-&lt;i&gt;Version: 1.8.0 (2017-Jul-02)&lt;/i&gt;&lt;br&gt;
-&lt;i&gt;Created by: Miroslaw Brudnowski&lt;/i&gt;&lt;br&gt;&lt;br&gt;
-&lt;i&gt;Released under the Creative Commons Attribution 4.0 International License: &lt;a href="http://creativecommons.org/licenses/by/4.0"&gt;http://creativecommons.org/licenses/by/4.0&lt;/a&gt;&lt;/i&gt;
-&lt;br&gt;&lt;br&gt;
-&lt;center&gt;
-&lt;a href="http://diymodules.org/eagle"&gt;&lt;img src="http://www.diymodules.org/img/diymodules-lbr-image.php?v=1.8.0" alt="DIYmodules.org"&gt;&lt;/a&gt;
-&lt;/center&gt;</description>
-<packages>
-<package name="DISPLAY-OLED-128X32">
-<description>&lt;b&gt;128x32 Dot Matrix OLED Module&lt;/b&gt; with &lt;b&gt;I2C&lt;/b&gt; interface</description>
-<pad name="1" x="-17.78" y="-3.81" drill="1" shape="square"/>
-<pad name="2" x="-17.78" y="-1.27" drill="1"/>
-<pad name="3" x="-17.78" y="1.27" drill="1"/>
-<pad name="4" x="-17.78" y="3.81" drill="1"/>
-<text x="0" y="7.62" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-7.62" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-<wire x1="-19.05" y1="6.096" x2="19.05" y2="6.096" width="0.127" layer="21"/>
-<wire x1="19.05" y1="6.096" x2="19.05" y2="-6.096" width="0.127" layer="21"/>
-<wire x1="19.05" y1="-6.096" x2="-19.05" y2="-6.096" width="0.127" layer="21"/>
-<wire x1="-19.05" y1="-6.096" x2="-19.05" y2="6.096" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="5.715" x2="15.875" y2="5.715" width="0.127" layer="21"/>
-<wire x1="15.875" y1="5.715" x2="15.875" y2="-5.715" width="0.127" layer="21"/>
-<wire x1="15.875" y1="-5.715" x2="-13.97" y2="-5.715" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="-5.715" x2="-13.97" y2="5.715" width="0.127" layer="21"/>
-<wire x1="-12.065" y1="3.556" x2="10.414" y2="3.556" width="0.127" layer="21"/>
-<wire x1="10.414" y1="3.556" x2="10.414" y2="-2.032" width="0.127" layer="21"/>
-<wire x1="10.414" y1="-2.032" x2="-12.065" y2="-2.032" width="0.127" layer="21"/>
-<wire x1="-12.065" y1="-2.032" x2="-12.065" y2="3.556" width="0.127" layer="21"/>
-<text x="-16.51" y="-3.81" size="0.762" layer="21" align="center-left">GND</text>
-<text x="-16.51" y="-1.27" size="0.762" layer="21" align="center-left">VCC</text>
-<text x="-16.51" y="1.27" size="0.762" layer="21" align="center-left">SCL</text>
-<text x="-16.51" y="3.81" size="0.762" layer="21" align="center-left">SDA</text>
-</package>
-</packages>
-<symbols>
-<symbol name="DISPLAY-OLED-128X32">
-<description>&lt;b&gt;128x32 Dot Matrix OLED Module&lt;/b&gt; with &lt;b&gt;I2C&lt;/b&gt; interface</description>
-<wire x1="-25.4" y1="7.62" x2="25.4" y2="7.62" width="0.254" layer="94"/>
-<wire x1="25.4" y1="7.62" x2="25.4" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-10.16" x2="-25.4" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-25.4" y1="-10.16" x2="-25.4" y2="7.62" width="0.254" layer="94"/>
-<pin name="GND" x="-30.48" y="-5.08" length="middle" direction="pwr"/>
-<pin name="VCC" x="-30.48" y="-2.54" length="middle" direction="pwr"/>
-<pin name="SDA" x="-30.48" y="2.54" length="middle"/>
-<pin name="SCL" x="-30.48" y="0" length="middle"/>
-<wire x1="-15.24" y1="5.08" x2="15.24" y2="5.08" width="0.254" layer="94"/>
-<wire x1="15.24" y1="5.08" x2="15.24" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-5.08" x2="-15.24" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-5.08" x2="-15.24" y2="5.08" width="0.254" layer="94"/>
-<rectangle x1="-14.224" y1="2.54" x2="-12.7" y2="4.064" layer="94"/>
-<rectangle x1="-11.684" y1="2.54" x2="-10.16" y2="4.064" layer="94"/>
-<rectangle x1="-14.224" y1="0" x2="-12.7" y2="1.524" layer="94"/>
-<text x="-25.4" y="12.7" size="1.778" layer="95">&gt;NAME</text>
-<text x="-25.4" y="10.16" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-9.144" y1="2.54" x2="-7.62" y2="4.064" layer="94"/>
-<rectangle x1="-14.224" y1="-2.54" x2="-12.7" y2="-1.016" layer="94"/>
-<rectangle x1="-11.684" y1="0" x2="-10.16" y2="1.524" layer="94"/>
-<text x="12.7" y="-2.54" size="1.778" layer="94" align="bottom-right">128x32</text>
-<text x="12.7" y="0" size="1.778" layer="94" align="bottom-right">OLED</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DISPLAY-OLED-128X32">
-<description>&lt;b&gt;128x32 Dot Matrix OLED Module&lt;/b&gt; with &lt;b&gt;I2C&lt;/b&gt; interface based on &lt;b&gt;SSD1306&lt;/b&gt; chip
-&lt;p&gt;More details available here:&lt;br&gt;
-&lt;a href="http://www.tinyosshop.com/index.php?route=product/product&amp;product_id=953"&gt;http://www.tinyosshop.com/index.php?route=product/product&amp;product_id=953&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Schematic available here:&lt;br&gt;
-&lt;a href="http://www.tinyosshop.com/datasheet/OLED%2012832.pdf"&gt;http://www.tinyosshop.com/datasheet/OLED%2012832.pdf&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;SSD1306&lt;/b&gt; datasheet:&lt;br&gt;
-&lt;a href="https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf"&gt;https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;&lt;a href="http://www.ebay.com/sch/oled+display+128x32+i2c"&gt;Click here to find device on ebay.com&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="photo" src="http://www.diymodules.org/img/device-photo.php?name=DISPLAY-OLED-128X32"&gt;&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="DISPLAY-OLED-128X32" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DISPLAY-OLED-128X32">
-<connects>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="SCL" pad="3"/>
-<connect gate="G$1" pin="SDA" pad="4"/>
-<connect gate="G$1" pin="VCC" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1340,6 +1181,195 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 </deviceset>
 </devicesets>
 </library>
+<library name="jumper" urn="urn:adsk.eagle:library:252">
+<description>&lt;b&gt;Jumpers&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="JP2" urn="urn:adsk.eagle:footprint:15390/1" library_version="1">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<wire x1="-3.81" y1="-1.016" x2="-3.81" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="3.556" y1="1.27" x2="1.524" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.016" x2="1.524" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="3.556" y1="-1.27" x2="1.524" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.016" x2="1.524" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.556" y1="-1.27" x2="3.81" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="3.556" y1="1.27" x2="3.81" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="1.016" x2="3.81" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="1.27" x2="1.27" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="1.27" x2="-1.016" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.016" x2="-1.016" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="1.27" x2="-1.27" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="1.016" x2="-3.556" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="1.27" x2="-3.556" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-1.27" x2="1.27" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.016" x2="-1.016" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="-1.27" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-1.016" x2="-3.556" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-1.27" x2="-1.016" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="-1.27" x2="-3.556" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="0.9144" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="0.9144" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="0.9144" shape="long" rot="R90"/>
+<text x="-3.556" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-2.667" size="0.9906" layer="21" ratio="12">1</text>
+<text x="0" y="-2.667" size="0.9906" layer="21" ratio="12">2</text>
+<text x="2.54" y="-2.667" size="0.9906" layer="21" ratio="12">3</text>
+<text x="-3.556" y="-4.318" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-2.8448" y1="-0.3048" x2="-2.2352" y2="0.3048" layer="51"/>
+<rectangle x1="-0.3048" y1="-0.3048" x2="0.3048" y2="0.3048" layer="51"/>
+<rectangle x1="2.2352" y1="-0.3048" x2="2.8448" y2="0.3048" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="JP2" urn="urn:adsk.eagle:package:15452/1" type="box" library_version="1">
+<description>JUMPER</description>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="JP3E" urn="urn:adsk.eagle:symbol:15389/1" library_version="1">
+<wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="-3.175" y1="0" x2="3.175" y2="0" width="0.4064" layer="94"/>
+<wire x1="3.175" y1="0" x2="3.175" y2="0.635" width="0.4064" layer="94"/>
+<wire x1="3.175" y1="0.635" x2="-3.175" y2="0.635" width="0.4064" layer="94"/>
+<wire x1="-3.175" y1="0.635" x2="-3.175" y2="0" width="0.4064" layer="94"/>
+<text x="-3.81" y="0" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="5.715" y="0" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="2" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="3" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JP2E" urn="urn:adsk.eagle:component:15482/1" prefix="JP" uservalue="yes" library_version="1">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="JP3E" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JP2">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+<connect gate="1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15452/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="diy-modules">
+<description>&lt;b&gt;DIY Modules for Arduino, Raspberry Pi, CubieBoard etc.&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;
+The library contains a list of symbols and footprints for popular, cheap and easy-to-use electronic modules.&lt;br&gt;
+The modules are intend to work with microprocessor-based platforms such as &lt;a href="http://arduino.cc"&gt;Arduino&lt;/a&gt;, &lt;a href="http://raspberrypi.org/"&gt;Raspberry Pi&lt;/a&gt;, &lt;a href="http://cubieboard.org/"&gt;CubieBoard&lt;/a&gt;, &lt;a href="http://beagleboard.org/"&gt;BeagleBone&lt;/a&gt; and many others. There are many manufacturers of the modules in the world. Almost all of them can be bought on &lt;a href="ebay.com"&gt;ebay.com&lt;/a&gt;.&lt;br&gt;
+&lt;br&gt;
+By using this library, you can design a PCB for devices created with usage of modules. Even if you do not need to create PCB design, you can also use the library to quickly document your work by drawing schematics of devices built by you.&lt;br&gt;
+&lt;br&gt;
+The latest version, examples, photos and much more can be found at: &lt;b&gt;&lt;a href="http://diymodules.org/eagle"&gt;diymodules.org/eagle&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailto:eagle@diymodules.org"&gt;eagle@diymodules.org&lt;/b&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+&lt;i&gt;Version: 1.8.0 (2017-Jul-02)&lt;/i&gt;&lt;br&gt;
+&lt;i&gt;Created by: Miroslaw Brudnowski&lt;/i&gt;&lt;br&gt;&lt;br&gt;
+&lt;i&gt;Released under the Creative Commons Attribution 4.0 International License: &lt;a href="http://creativecommons.org/licenses/by/4.0"&gt;http://creativecommons.org/licenses/by/4.0&lt;/a&gt;&lt;/i&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;center&gt;
+&lt;a href="http://diymodules.org/eagle"&gt;&lt;img src="http://www.diymodules.org/img/diymodules-lbr-image.php?v=1.8.0" alt="DIYmodules.org"&gt;&lt;/a&gt;
+&lt;/center&gt;</description>
+<packages>
+<package name="DISPLAY-OLED-128X32">
+<description>&lt;b&gt;128x32 Dot Matrix OLED Module&lt;/b&gt; with &lt;b&gt;I2C&lt;/b&gt; interface</description>
+<pad name="1" x="-17.78" y="-3.81" drill="1" shape="square"/>
+<pad name="2" x="-17.78" y="-1.27" drill="1"/>
+<pad name="3" x="-17.78" y="1.27" drill="1"/>
+<pad name="4" x="-17.78" y="3.81" drill="1"/>
+<text x="12.7" y="3.81" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="12.7" y="-3.81" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<wire x1="-19.05" y1="6.096" x2="19.05" y2="6.096" width="0.127" layer="21"/>
+<wire x1="19.05" y1="6.096" x2="19.05" y2="-6.096" width="0.127" layer="21"/>
+<wire x1="19.05" y1="-6.096" x2="-19.05" y2="-6.096" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="-6.096" x2="-19.05" y2="6.096" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="5.715" x2="15.875" y2="5.715" width="0.127" layer="21"/>
+<wire x1="15.875" y1="5.715" x2="15.875" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="15.875" y1="-5.715" x2="-13.97" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="-5.715" x2="-13.97" y2="5.715" width="0.127" layer="21"/>
+<wire x1="-12.065" y1="3.556" x2="10.414" y2="3.556" width="0.127" layer="21"/>
+<wire x1="10.414" y1="3.556" x2="10.414" y2="-2.032" width="0.127" layer="21"/>
+<wire x1="10.414" y1="-2.032" x2="-12.065" y2="-2.032" width="0.127" layer="21"/>
+<wire x1="-12.065" y1="-2.032" x2="-12.065" y2="3.556" width="0.127" layer="21"/>
+<text x="-16.51" y="-3.81" size="0.762" layer="21" align="center-left">GND</text>
+<text x="-16.51" y="-1.27" size="0.762" layer="21" align="center-left">VCC</text>
+<text x="-16.51" y="1.27" size="0.762" layer="21" align="center-left">SCL</text>
+<text x="-16.51" y="3.81" size="0.762" layer="21" align="center-left">SDA</text>
+</package>
+</packages>
+<symbols>
+<symbol name="DISPLAY-OLED-128X32">
+<description>&lt;b&gt;128x32 Dot Matrix OLED Module&lt;/b&gt; with &lt;b&gt;I2C&lt;/b&gt; interface</description>
+<wire x1="-25.4" y1="7.62" x2="25.4" y2="7.62" width="0.254" layer="94"/>
+<wire x1="25.4" y1="7.62" x2="25.4" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-10.16" x2="-25.4" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-10.16" x2="-25.4" y2="7.62" width="0.254" layer="94"/>
+<pin name="GND" x="-30.48" y="-5.08" length="middle" direction="pwr"/>
+<pin name="VCC" x="-30.48" y="-2.54" length="middle" direction="pwr"/>
+<pin name="SDA" x="-30.48" y="2.54" length="middle"/>
+<pin name="SCL" x="-30.48" y="0" length="middle"/>
+<wire x1="-15.24" y1="5.08" x2="15.24" y2="5.08" width="0.254" layer="94"/>
+<wire x1="15.24" y1="5.08" x2="15.24" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="-15.24" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-5.08" x2="-15.24" y2="5.08" width="0.254" layer="94"/>
+<rectangle x1="-14.224" y1="2.54" x2="-12.7" y2="4.064" layer="94"/>
+<rectangle x1="-11.684" y1="2.54" x2="-10.16" y2="4.064" layer="94"/>
+<rectangle x1="-14.224" y1="0" x2="-12.7" y2="1.524" layer="94"/>
+<text x="-25.4" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="-25.4" y="10.16" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-9.144" y1="2.54" x2="-7.62" y2="4.064" layer="94"/>
+<rectangle x1="-14.224" y1="-2.54" x2="-12.7" y2="-1.016" layer="94"/>
+<rectangle x1="-11.684" y1="0" x2="-10.16" y2="1.524" layer="94"/>
+<text x="12.7" y="-2.54" size="1.778" layer="94" align="bottom-right">128x32</text>
+<text x="12.7" y="0" size="1.778" layer="94" align="bottom-right">OLED</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DISPLAY-OLED-128X32">
+<description>&lt;b&gt;128x32 Dot Matrix OLED Module&lt;/b&gt; with &lt;b&gt;I2C&lt;/b&gt; interface based on &lt;b&gt;SSD1306&lt;/b&gt; chip
+&lt;p&gt;More details available here:&lt;br&gt;
+&lt;a href="http://www.tinyosshop.com/index.php?route=product/product&amp;product_id=953"&gt;http://www.tinyosshop.com/index.php?route=product/product&amp;product_id=953&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Schematic available here:&lt;br&gt;
+&lt;a href="http://www.tinyosshop.com/datasheet/OLED%2012832.pdf"&gt;http://www.tinyosshop.com/datasheet/OLED%2012832.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SSD1306&lt;/b&gt; datasheet:&lt;br&gt;
+&lt;a href="https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf"&gt;https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;a href="http://www.ebay.com/sch/oled+display+128x32+i2c"&gt;Click here to find device on ebay.com&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="photo" src="http://www.diymodules.org/img/device-photo.php?name=DISPLAY-OLED-128X32"&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="DISPLAY-OLED-128X32" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DISPLAY-OLED-128X32">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="SCL" pad="3"/>
+<connect gate="G$1" pin="SDA" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1364,16 +1394,9 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <part name="GND5" library="paste_injector" deviceset="GND" device=""/>
 <part name="GND6" library="paste_injector" deviceset="GND" device=""/>
 <part name="U$20" library="paste_injector" deviceset="DOCFIELD" device=""/>
-<part name="GND22" library="paste_injector" deviceset="GND" device=""/>
 <part name="J1" library="paste_injector" deviceset="USB" device=""/>
 <part name="U1" library="paste_injector" deviceset="ATMEGA328" device="TQFP32"/>
 <part name="P+6" library="paste_injector" deviceset="+5V" device=""/>
-<part name="U$9" library="paste_injector" deviceset="NC" device=""/>
-<part name="U$13" library="paste_injector" deviceset="NC" device=""/>
-<part name="U$14" library="paste_injector" deviceset="NC" device=""/>
-<part name="S2" library="paste_injector" deviceset="PUSH_BUTTON" device=""/>
-<part name="U$15" library="paste_injector" deviceset="NC" device=""/>
-<part name="U$17" library="paste_injector" deviceset="NC" device=""/>
 <part name="U$18" library="paste_injector" deviceset="NC" device=""/>
 <part name="U2" library="paste_injector" deviceset="ULN2003A" device="D"/>
 <part name="GND2" library="paste_injector" deviceset="GND" device=""/>
@@ -1381,8 +1404,6 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <part name="P+3" library="paste_injector" deviceset="+5V" device=""/>
 <part name="P+4" library="paste_injector" deviceset="+5V" device=""/>
 <part name="P+5" library="paste_injector" deviceset="+5V" device=""/>
-<part name="S1" library="paste_injector" deviceset="PUSH_BUTTON" device=""/>
-<part name="GND18" library="paste_injector" deviceset="GND" device=""/>
 <part name="J3" library="paste_injector" deviceset="PINHD-1X5" device=""/>
 <part name="D1" library="paste_injector" deviceset="LED" device=""/>
 <part name="R2" library="paste_injector" deviceset="RES-" device="R0603" value="3K3"/>
@@ -1400,11 +1421,13 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <part name="U$12" library="paste_injector" deviceset="NC" device=""/>
 <part name="GND4" library="paste_injector" deviceset="GND" device=""/>
 <part name="P+9" library="paste_injector" deviceset="+5V" device=""/>
-<part name="U$16" library="diy-modules" deviceset="DISPLAY-OLED-128X32" device=""/>
 <part name="SW1" library="lbrzak" deviceset="MCPL3-AV-V" device=""/>
 <part name="GND7" library="paste_injector" deviceset="GND" device=""/>
 <part name="GND9" library="paste_injector" deviceset="GND" device=""/>
 <part name="Q1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="CERMOSCILL" device="-CSTCRG" value="16Mhz"/>
+<part name="GND10" library="paste_injector" deviceset="GND" device=""/>
+<part name="P-BUTT." library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP2E" device="" package3d_urn="urn:adsk.eagle:package:15452/1"/>
+<part name="U3" library="diy-modules" deviceset="DISPLAY-OLED-128X32" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1420,10 +1443,9 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <text x="-2.54" y="93.98" size="3.048" layer="97">MOTOR DRIVER</text>
 <text x="200.66" y="116.84" size="3.048" layer="97">MCU</text>
 <text x="231.14" y="71.12" size="3.048" layer="97">MOTOR PADS</text>
-<text x="233.68" y="185.166" size="1.524" layer="97">(open col.)</text>
-<text x="233.68" y="182.626" size="1.524" layer="97">(open col.)</text>
 <text x="78.74" y="17.78" size="3.048" layer="97">STATUS LED</text>
-<text x="-2.54" y="17.78" size="3.048" layer="97">PUSH-BUTTONS</text>
+<text x="45.72" y="71.12" size="3.048" layer="97">PUSH-BUTTONS JUMPER
+contact to GND.</text>
 </plain>
 <instances>
 <instance part="GND16" gate="1" x="180.34" y="127"/>
@@ -1447,20 +1469,11 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <instance part="GND5" gate="1" x="10.16" y="165.1"/>
 <instance part="GND6" gate="1" x="17.78" y="165.1"/>
 <instance part="U$20" gate="G$1" x="180.34" y="0"/>
-<instance part="GND22" gate="1" x="15.24" y="27.94"/>
 <instance part="J1" gate="G$1" x="0" y="177.8"/>
 <instance part="U1" gate="G$1" x="205.74" y="165.1"/>
 <instance part="P+6" gate="1" x="38.1" y="195.58" smashed="yes" rot="R270">
 <attribute name="VALUE" x="36.576" y="192.532" size="1.778" layer="96"/>
 </instance>
-<instance part="U$9" gate="G$1" x="231.14" y="139.7" rot="R180"/>
-<instance part="U$13" gate="G$1" x="231.14" y="142.24" rot="R180"/>
-<instance part="U$14" gate="G$1" x="231.14" y="144.78" rot="R180"/>
-<instance part="S2" gate="G$1" x="15.24" y="40.64" smashed="yes">
-<attribute name="NAME" x="9.652" y="36.068" size="1.778" layer="95"/>
-</instance>
-<instance part="U$15" gate="G$1" x="231.14" y="182.88" rot="R180"/>
-<instance part="U$17" gate="G$1" x="231.14" y="185.42" rot="R180"/>
 <instance part="U$18" gate="G$1" x="231.14" y="193.04" rot="R180"/>
 <instance part="U2" gate="A" x="12.7" y="129.54"/>
 <instance part="GND2" gate="1" x="-2.54" y="104.14"/>
@@ -1476,10 +1489,6 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <instance part="P+5" gate="1" x="195.58" y="91.44" smashed="yes">
 <attribute name="VALUE" x="198.628" y="89.916" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="S1" gate="G$1" x="0" y="40.64" smashed="yes">
-<attribute name="NAME" x="-5.588" y="36.068" size="1.778" layer="95"/>
-</instance>
-<instance part="GND18" gate="1" x="0" y="27.94"/>
 <instance part="J3" gate="A" x="251.46" y="86.36"/>
 <instance part="D1" gate="G$1" x="83.82" y="38.1"/>
 <instance part="R2" gate="G$1" x="83.82" y="50.8" smashed="yes" rot="R90">
@@ -1504,11 +1513,13 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <instance part="P+9" gate="1" x="256.54" y="190.5" smashed="yes">
 <attribute name="VALUE" x="259.588" y="188.976" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U$16" gate="G$1" x="271.78" y="137.16" rot="R270"/>
 <instance part="SW1" gate="G$1" x="200.66" y="223.52" rot="R270"/>
 <instance part="GND7" gate="1" x="190.5" y="210.82" rot="MR0"/>
 <instance part="GND9" gate="1" x="195.58" y="210.82" rot="MR0"/>
 <instance part="Q1" gate="G$1" x="165.1" y="170.18" rot="R270"/>
+<instance part="GND10" gate="1" x="68.58" y="78.74"/>
+<instance part="P-BUTT." gate="1" x="71.12" y="83.82" rot="R270"/>
+<instance part="U3" gate="G$1" x="271.78" y="137.16" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -1551,16 +1562,6 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <pinref part="U1" gate="G$1" pin="GND@2"/>
 </segment>
 <segment>
-<pinref part="GND22" gate="1" pin="GND"/>
-<wire x1="15.24" y1="30.48" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="S2" gate="G$1" pin="1"/>
-<pinref part="S2" gate="G$1" pin="GND"/>
-<wire x1="15.24" y1="33.02" x2="15.24" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="35.56" x2="17.78" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
-<junction x="15.24" y="33.02"/>
-</segment>
-<segment>
 <pinref part="U2" gate="A" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="0" y1="119.38" x2="-2.54" y2="119.38" width="0.1524" layer="91"/>
@@ -1579,16 +1580,6 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <junction x="-2.54" y="119.38"/>
 </segment>
 <segment>
-<pinref part="S1" gate="G$1" pin="1"/>
-<pinref part="GND18" gate="1" pin="GND"/>
-<wire x1="0" y1="35.56" x2="0" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="GND"/>
-<wire x1="0" y1="33.02" x2="0" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="35.56" x2="2.54" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="33.02" x2="0" y2="33.02" width="0.1524" layer="91"/>
-<junction x="0" y="33.02"/>
-</segment>
-<segment>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="160.02" y1="170.18" x2="162.56" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="GND"/>
@@ -1601,8 +1592,8 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="259.08" y1="167.64" x2="259.08" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="U$16" gate="G$1" pin="GND"/>
 <wire x1="259.08" y1="167.64" x2="266.7" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="SW1" gate="G$1" pin="G"/>
@@ -1611,6 +1602,10 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <segment>
 <pinref part="SW1" gate="G$1" pin="C"/>
 <pinref part="GND9" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND10" gate="1" pin="GND"/>
+<pinref part="P-BUTT." gate="1" pin="3"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -1739,8 +1734,8 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <pinref part="P+9" gate="1" pin="+5V"/>
 <wire x1="256.54" y1="187.96" x2="256.54" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="170.18" x2="269.24" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="U$16" gate="G$1" pin="VCC"/>
 <wire x1="269.24" y1="170.18" x2="269.24" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 <net name="M1" class="0">
@@ -1789,32 +1784,6 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <pinref part="U1" gate="G$1" pin="PD5(T1)"/>
 <wire x1="231.14" y1="157.48" x2="251.46" y2="157.48" width="0.1524" layer="91"/>
 <label x="241.3" y="157.48" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PULL" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PD6(AIN0)"/>
-<wire x1="231.14" y1="154.94" x2="251.46" y2="154.94" width="0.1524" layer="91"/>
-<label x="241.3" y="154.94" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="S1" gate="G$1" pin="2"/>
-<wire x1="0" y1="45.72" x2="0" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="0" y1="58.42" x2="35.56" y2="58.42" width="0.1524" layer="91"/>
-<label x="27.94" y="58.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PUSH" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PD7(AIN1)"/>
-<wire x1="231.14" y1="152.4" x2="251.46" y2="152.4" width="0.1524" layer="91"/>
-<label x="241.3" y="152.4" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="S2" gate="G$1" pin="2"/>
-<wire x1="15.24" y1="45.72" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="50.8" x2="35.56" y2="50.8" width="0.1524" layer="91"/>
-<label x="27.94" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -1891,9 +1860,9 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <pinref part="U1" gate="G$1" pin="PC4(ADC4/SDA)"/>
 <wire x1="231.14" y1="185.42" x2="261.62" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="261.62" y1="185.42" x2="261.62" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="U$16" gate="G$1" pin="SDA"/>
 <wire x1="261.62" y1="175.26" x2="274.32" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="175.26" x2="274.32" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="SDA"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -1901,9 +1870,9 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <pinref part="U1" gate="G$1" pin="PC5(ADC5/SCL)"/>
 <wire x1="231.14" y1="182.88" x2="259.08" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="182.88" x2="259.08" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="U$16" gate="G$1" pin="SCL"/>
 <wire x1="259.08" y1="172.72" x2="271.78" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="172.72" x2="271.78" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="SCL"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -1922,7 +1891,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <wire x1="205.74" y1="210.82" x2="236.22" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="210.82" x2="236.22" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="PB1(OC1A)"/>
-<wire x1="236.22" y1="142.24" x2="231.14" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="142.24" x2="236.22" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -1935,16 +1904,54 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <wire x1="200.66" y1="208.28" x2="200.66" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="PULL" class="0">
+<segment>
+<wire x1="68.58" y1="86.36" x2="55.88" y2="86.36" width="0.1524" layer="91"/>
+<label x="55.88" y="88.9" size="1.778" layer="95"/>
+<pinref part="P-BUTT." gate="1" pin="1"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PD6(AIN0)"/>
+<wire x1="231.14" y1="154.94" x2="251.46" y2="154.94" width="0.1524" layer="91"/>
+<label x="241.3" y="154.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PUSH" class="0">
+<segment>
+<wire x1="68.58" y1="83.82" x2="55.88" y2="83.82" width="0.1524" layer="91"/>
+<label x="55.88" y="81.28" size="1.778" layer="95"/>
+<pinref part="P-BUTT." gate="1" pin="2"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PD7(AIN1)"/>
+<wire x1="231.14" y1="152.4" x2="251.46" y2="152.4" width="0.1524" layer="91"/>
+<label x="241.3" y="152.4" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>

@@ -9,9 +9,21 @@
     #include <SPI.h>
 #endif
 
+
+//*** longpressbuttons features (dev. progress for oled menus)
+long buttonTimer = 0;
+boolean buttonActive = false;
+
 // Controller the solder paste injector.
 
-// For motor pin connection see motor_io.cpp.
+// For motor pin connection see motor.ino.
+//----------------------------------------
+
+//init
+static uint8_t state = STATE_IDLE;
+
+Motor motor = Motor();
+
 // Arduino initialization function.
 void setup() {
   Serial.begin(115200);
