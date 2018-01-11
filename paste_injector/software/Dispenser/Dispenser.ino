@@ -32,10 +32,9 @@ void setup() {
  
   pinMode(kLedPin, OUTPUT);
 
-  //PUSHBUTTONS
+  //Pushbuttons
   pinMode(kForwardButtonPin, INPUT_PULLUP);
   pinMode(kBackwardButtonPin, INPUT_PULLUP);
-
   // Tactile control
   pinMode(buttonUp, INPUT);
   digitalWrite(buttonUp, INPUT_PULLUP);
